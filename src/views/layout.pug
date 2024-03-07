@@ -7,13 +7,15 @@ html
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css")
   body
     .container
-      header.header#header  
+      header.header#header
+        
         img.logo(src="/images/2-sinfondo.png")
+
         nav.nav#nav
 
           ul.links
             li
-              a.active#link1(href="/products") Productos
+              a#link1(href="/products") Productos
             li
               a#link2(href="/category/Camisetas") Camisetas
             li
@@ -22,9 +24,11 @@ html
               a#link4(href="/category/Zapatos") Zapatos
             li
               a#link5(href="/category/Accesorios") Accesorios
-        
+
+          input#check(type='checkbox')
           label.checkbtn(for='check')
           i.fa-solid.fa-bars.icono(onclick='toggleCheckbox()')
+          
           if session && session.uid
             button#create-button.create-button(type="button") Crear producto
             li

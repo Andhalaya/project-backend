@@ -1,5 +1,5 @@
 
-const {hashedSecret} = require('./config/crypto');
+const Product = require('./models/Product');
 const express = require('express');
 const session = require('express-session');
 const app = express();
@@ -16,10 +16,16 @@ require('dotenv').config();
 
 app.set('trust proxy', 1);
 app.use(session({
-    secret: hashedSecret,
+    // cookie:{
+    //     secure: true,
+    //     maxAge:60000
+    //        },
+    //        store: new MemoryStore({
+    //         checkPeriod: 86400000 // prune expired entries every 24h
+    //       }),
+    secret: 'mySecret',
     resave: false,
     saveUninitialized: true,
-    cookie: { secure: false }
 }));
 
 app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(docs));
