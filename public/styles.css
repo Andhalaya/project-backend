@@ -30,12 +30,115 @@ a {
     color: rgb(77, 74, 74);
 }
 
-/*--------------------------------------- HEADER--------------------------------------- */
+#login-modal, #create-modal, #delete-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color:#737373;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    background: linear-gradient(45deg, #70B3BF, #70B3BF, aliceblue);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px;
+    height: 400px;
+    color: #737373;
+    gap: 15px;
+}
 
 .register {
     border: 1px solid gray;
     padding: 5px 10px;
     color: black;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.checkbtn{
+    display: none;
+}
+
+.fa-solid.fa-bars.icono{
+ font-size: 30px; 
+ float: right;
+ line-height: 80px;  
+ cursor: pointer;
+ display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 720px) {
+    .logo {
+      width: 150px;
+    }
+    .checkbtn {
+      display: block;
+    }
+    .fa-solid.fa-bars.icono {
+      display: block;
+    }
+    .links {
+
+        display:flex;
+        flex-direction: column;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(45deg, #70B3BF, #70B3BF, aliceblue);
+      color: #737373;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: left 0.5s;
+      z-index: 3;
+      margin-top: 30px;
+    }
+    .links.show {
+      left: 0;
+    }
+    .links li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    .links a {
+      font-size: 20px;
+      color: #737373;
+      position: relative;
+    }
+    .links li:hover a {
+      color: #FFE900;
+    }
+    #check:checked + .links {
+      left: 100%;
+    }
 }
 
 header {
@@ -45,6 +148,11 @@ header {
     padding: 20px;
     background: linear-gradient(45deg, #70B3BF, #70B3BF, aliceblue);
     color: aliceblue;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 header .logo {
@@ -101,62 +209,22 @@ a:hover:after {
     width: 50px;
 }
 
-
+#logout button,
+#login-button {
+    display: inline-flex;
+    justify-content: center;
+    color: #737373;
+    padding: 5px 15px;
+    border: 2px solid #FFE900;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 10px;
+}
 
 #login-form {
     width: 380px;
-}
-
-.fa-solid.fa-bars.icono{
-    display: none;
-}
-
-
-/*------------------------------ MODALES---------------------------- */
-
-#login-modal, #create-modal, #delete-modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    line-height: 20px;
-    background-color: #fefefe;
-    background: linear-gradient(45deg, #70B3BF, #70B3BF, aliceblue);
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 400px;
-    height: 400px;
-    color: #737373;
-    gap: 15px;
-}
-
-#sizes-modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-}
-
-
-
-#login-form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,7 +233,27 @@ a:hover:after {
     gap: 15px;
     padding: 10px;
     margin: 10px;
+}
 
+@media (max-width: 858px) {
+    #login-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 10px;
+        padding: 10px;
+        margin: 10px;
+        gap: 15px;
+    
+    }
+}
+
+#create-button{
+    background-color: transparent;
+    color: #737373;
+    border: none;
+    cursor: pointer;
 }
 
 .items {
@@ -176,9 +264,7 @@ a:hover:after {
 }
 
 .item{
-    display: flex;h1 {
-    margin-bottom: 20px;
-}
+    display: flex;
 }
 
 .buttons{
@@ -192,14 +278,7 @@ ul.links{
     gap: 20px;
 }
 
-.inputs {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-}
-
-/*-------------------------------------- DISPLAY DE PRODUCTOS------------------------------------ */
+/*¿que es esto?*/
 .div-item {
     background-color: aliceblue;
     display: flex;
@@ -285,11 +364,18 @@ p {
     padding: 20px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 
+/*Duplicado linea 85?*/
 .logo{
     width: 250px;
+}
+
+h1 {
+    margin-bottom: 20px;
 }
 
 .item-details {
@@ -311,6 +397,29 @@ p {
     margin-right: 10px;
 }
 
+.update button,
+.delete button, 
+.button-register {
+    display: inline-flex;
+    justify-content: center;
+    color: #737373;
+    padding: 5px 15px;
+    border: 2px solid #FFE900;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.update button:hover,
+.delete button:hover,
+.button-register:hover {
+    background: linear-gradient(45deg, #0a3256, #051425, #333333);
+    color: aliceblue;
+    border: 2px solid #70B3BF;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -323,6 +432,17 @@ p {
     margin: 0 30px;
     padding: 20px;
     font-size: 20px;
+}
+
+#sizes-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
 }
 
 .sizes-content {
@@ -349,7 +469,17 @@ p {
     flex-direction: column;
 }
 
-/* ---------------------------------BOTONES---------------------------------------------- */
+#delete-button-form {
+    height: 12%;
+    width: 29%;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
 
 .register, .button-new-sesion, .button-new-product, 
 .update button, .delete button, .edit-button-submit, .button-new-product, .delete-button-submit, .button-register { 
@@ -365,76 +495,13 @@ p {
     margin: 10px;
 }
 
-#create-button{
-    background-color: transparent;
-    color: #737373;
-    border: none;
-    cursor: pointer;
-}
-
 .edit-button-submit {
     width: 100px;
 }
-#logout button,
-#login-button {
-    display: inline-flex;
-    justify-content: center;
-    color: #737373;
-    padding: 5px 15px;
-    border: 2px solid #FFE900;
-    border-radius: 5px;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 20px;
-    margin: 10px;
-}
-
-#delete-button-form {
-    height: 12%;
-    width: 29%;
-}
-
-.update button,
-.delete button, 
-.button-register {
-    display: inline-flex;
-    justify-content: center;
-    color: #737373;
-    padding: 5px 15px;
-    border: 2px solid #FFE900;
-    border-radius: 5px;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 20px;
-    margin: 10px;
-}
-
-.update button:hover,
-.delete button:hover,
-.button-register:hover {
-    background: linear-gradient(45deg, #0a3256, #051425, #333333);
-    color: aliceblue;
-    border: 2px solid #70B3BF;
-}
-
 
 .edit-cancel, .rebister-back {
     font-size: 20px;
     padding: 5px 15px;
-}
-
-.close-button {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close-button:hover,
-.close-button:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
 }
 
 #delete-button-submit {
@@ -451,8 +518,6 @@ p {
 label {
     font-weight: bold;
 }
-
-/* -------------------------------------DESCRIPCION DE PRODUCTOS--------------------------  */
 
 .sizes {
     margin-bottom: 15px;
@@ -550,8 +615,6 @@ summary {
     justify-content: center;
 }
 
-/*-------------------------------- FOOTER-------------------------------------- */
-
 .footer {
     display: block;
     display: flex;
@@ -603,8 +666,6 @@ summary {
     width: 50px;
     height: 50px;
 }
-
-/* ---------------------------DARK MODE--------------------------------------- */
 
 .dark-mode-toggle {
     display: flex;
@@ -703,67 +764,3 @@ summary {
 .dark-td {
     border: 2px solid #70B3BF;
 }
-
-
-/* MEDIA  */
-
-@media (max-width: 858px) {
-    #login-form{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        line-height: 10px;
-        padding: 10px;
-        margin: 10px;
-        gap: 15px;
-    
-    }
-}
-
-@media (max-width: 720px) {
-    .logo {
-      width: 150px;
-    }
-    .checkbtn {
-      display: block;
-    }
-    .fa-solid.fa-bars.icono {
-      display: block;
-      cursor: pointer;
-    }
-    .links {
-        display:flex;
-        flex-direction: column;
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: linear-gradient(45deg, #70B3BF, #70B3BF, aliceblue);
-      color: #737373;
-      top: 80px;
-      left: -100%;
-      text-align: center;
-      transition: left 0.5s;
-      z-index: 3;
-      margin-top: 30px;
-    }
-    .links.show {
-      left: 0;
-    }
-    .links li {
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-    }
-    .links a {
-      font-size: 20px;
-      color: #737373;
-      position: relative;
-    }
-    .links li:hover a {
-      color: #FFE900;
-    }
-    #check:checked + .links {
-      left: 100%;
-    }
-  }

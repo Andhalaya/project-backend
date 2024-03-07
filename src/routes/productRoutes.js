@@ -10,7 +10,7 @@ router.get('/category/:category', productController.showProductsByCategory);
 router.get('/dashboard/:productId', isAuthenticated, productController.showProductById);
 router.get('/dashboard', isAuthenticated, productController.showDashboard);
 router.post('/dashboard/new', isAuthenticated, upload.single('image'), productController.createProduct);
-router.get('/dashboard/:productId/edit', productController.showEditProduct);
+router.get('/dashboard/:productId/edit', isAuthenticated, productController.showEditProduct);
 router.post('/dashboard/:productId/edit', isAuthenticated, upload.single('image'), productController.editProduct);
 router.post('/dashboard/:productId/delete',isAuthenticated, productController.deleteProduct);
 

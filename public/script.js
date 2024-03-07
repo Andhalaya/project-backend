@@ -43,12 +43,6 @@ if(imageInput) {
     });
 };
 
-function toggleCheckbox() {
-    let menu = document.querySelector(".links");
-    menu.classList.toggle("show");
-  }
-
-
 const sizesLink = document.getElementById('sizes-link');
 const sizesModal = document.getElementById('sizes-modal');
 if (sizesLink) {
@@ -59,6 +53,11 @@ if (sizesLink) {
         sizesModal.style.display = 'none';
     });
 };
+
+function toggleCheckbox() {
+    let menu = document.querySelector(".links");
+    menu.classList.toggle("show");
+}
 
 toggleDarkMode = () => {
     document.body.classList.toggle("darkBody");
@@ -211,4 +210,3 @@ loadDarkModeState = () => {
 };
 
 window.addEventListener("load", loadDarkModeState);
-
