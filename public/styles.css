@@ -666,8 +666,8 @@ summary {
     background-color: #8094c4;
     border-color: #737373;
 }
-
-.darkFooter, .darkHeader {
+/*.darkHeader ul  para el nav responsivo*/
+.darkFooter, .darkHeader, .darkHeader ul {
     color: aliceblue;
     background: linear-gradient(45deg, #0a3256, #051425, #333333);
 }
