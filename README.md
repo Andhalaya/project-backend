@@ -250,6 +250,7 @@ https://project-backend-dev-send.1.ie-1.fl0.io/products
   ### Página eb responsive
   <p>Prueba de la pagina en un dispositivo con la pantalla mas pequeña</p> 
 
+  https://github.com/FSEduP/project-backend/assets/148755901/95ff313a-edff-4c40-9d15-c20a251cfe79
 
 </details>
 
