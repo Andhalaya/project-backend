@@ -58,12 +58,12 @@ header .nav {
     font-size: 1.2rem;
 }
 
-.links a {
+.links {
     color: #737373;
     position: relative;
 }
 
-a::before {
+.links::before {
     content:"";
     border-bottom: 2px solid #FFE900;
     position: absolute;
@@ -75,7 +75,7 @@ a::before {
     opacity: 0;
 }
 
-a::after {
+.links::after {
     content:"";
     border-bottom: 2px solid #FFE900;
     position: absolute;
@@ -91,12 +91,12 @@ a::after {
     color: #FFE900;
 }
 
-a:hover::before {
+.links:hover::before {
    opacity: 1;
     width: 70px;
 }
 
-a:hover:after {
+.links:hover:after {
     opacity: 1;
     width: 50px;
 }
@@ -109,6 +109,7 @@ a:hover:after {
 
 .fa-solid.fa-bars.icono{
     display: none;
+    font-size: 25px;
 }
 
 
@@ -724,14 +725,30 @@ summary {
 
 @media (max-width: 720px) {
     .logo {
-      width: 150px;
+      width: 170px !important;
     }
+
+    .sky{
+       margin-left: 0px;
+    }
+
+    #logout button,
+#login-button {
+    display: inline-flex;
+    justify-content: center;
+    color: #737373;
+    padding: 3px 9px;
+    font-size: 10px;
+    margin: 5px;
+    width: 50px;
+}
     .checkbtn {
       display: block;
     }
     .fa-solid.fa-bars.icono {
       display: block;
       cursor: pointer;
+      width:40px;
     }
     .darkHeader ul {
         background: linear-gradient(45deg, #0a3256, #051425, #333333) !important;
@@ -770,4 +787,18 @@ summary {
     #check:checked + .links {
       left: 100%;
     }
-  }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        gap: 20px;
+        font-weight: lighter;
+    }
+    .footer-contact-info {
+        display: none;
+    }
+    .footer-social-media {
+        margin-left: 18px;
+    }
+} 
