@@ -18,9 +18,7 @@ router.get('/products', productController.showProductsAPI);
 router.get('/products/:productId', productController.showProductByIdAPI);
 router.get('/category/:category', productController.showProductsByCategoryAPI);
 router.get('/dashboard/:productId', isAuthenticated, productController.showProductByIdAPI);
-router.get('/dashboard', isAuthenticated, productController.showDashboardAPI);
 router.post('/dashboard/new', isAuthenticated, upload.single('image'), productController.createProductAPI);
-router.get('/dashboard/:productId/edit', isAuthenticated, productController.showEditProductAPI);
 router.post('/dashboard/:productId/edit', isAuthenticated, upload.single('image'), productController.editProductAPI);
 router.post('/dashboard/:productId/delete', productController.deleteProductAPI);
 

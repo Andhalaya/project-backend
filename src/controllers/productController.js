@@ -157,11 +157,6 @@ const showProductsAPI = async (req, res) => {
   }
 };
 
-const showDashboardAPI = async (req, res) => {
-  const products = await Product.find();
-
-  res.json({products});
-};
 
 const showProductByIdAPI = async (req, res) => {
   try {
@@ -255,10 +250,6 @@ const editProductAPI = async (req, res) => {
   }
 };
 
-const showEditProductAPI = async (req, res) =>{
-  const product = await Product.findById(req.params.productId);
-  res.json(product);
-};
 
 const deleteProductAPI = async (req, res) => {
   try {
@@ -288,11 +279,9 @@ module.exports = {
   deleteProduct,
 
   showProductsAPI,
-  showDashboardAPI,
   showProductByIdAPI,
   showProductsByCategoryAPI,
   createProductAPI,
   editProductAPI,
-  showEditProductAPI,
   deleteProductAPI,
 };
