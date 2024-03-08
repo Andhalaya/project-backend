@@ -8,7 +8,7 @@ html
   body
     .container
       header.header#header  
-        img.logo(src="/images/2-sinfondo.png")
+        img.logo(src="/images/2-sinfondo.png", onclick="window.location='/products'", style="cursor: pointer;")
         nav.nav#nav
 
           ul.links
@@ -24,6 +24,8 @@ html
               a#link5(href="/category/Accesorios") Accesorios
         
           label.checkbtn(for='check')
+          //Con el input no da error en la consola
+          input#check(type="text", style="display: none")
           i.fa-solid.fa-bars.icono(onclick='toggleCheckbox()')
           if session && session.uid
             button#create-button.create-button(type="button") Crear producto
