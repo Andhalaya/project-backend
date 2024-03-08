@@ -248,7 +248,7 @@ https://project-backend-dev-send.1.ie-1.fl0.io/products
   <br>
 
   ### Página web responsive
-  <p>Prueba de la pagina en un dispositivo con la pantalla mas pequeña</p> 
+  <p>Prueba de la página en un dispositivo móvil con la pantalla más pequeña</p> 
 
   https://github.com/FSEduP/project-backend/assets/148755901/95ff313a-edff-4c40-9d15-c20a251cfe79
 
@@ -335,7 +335,7 @@ https://project-backend-dev-send.1.ie-1.fl0.io/products
 Para acceder a la documentación con swagger hay que acceder a través de la siguiente ruta:
 
 ```
-https://project-backend-dev-send.1.ie-1.fl0.io/products/api-docs
+https://project-backend-dev-send.1.ie-1.fl0.io/api-docs
 ```
 :lock: Para que las rutas del /dashboard funcionen hay que estar logado en la página con un usuario y contraseña válidos
 
