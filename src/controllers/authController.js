@@ -47,7 +47,7 @@ async function registerUser(req, res) {
         <p><a href="/products">Volver a Inicio</a></p>
       `);
   } catch (error) {
-    res.status(400).send(`
+    window.alert(`
       <h1>Error al registrar usuario</h1>
       <p>${error.message}</p>
       <p><a href="/register">Volver a Intentar</a></p>
