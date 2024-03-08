@@ -338,7 +338,7 @@ https://project-backend-dev-send.1.ie-1.fl0.io/api-docs
   ### Vista general de la documentación
   ![Vista general de la documentación](/public/images/apiDocs.jpg)
   <p>Vista general de la documentación en swagger con todas las rutas utilizadas, aquellas que necesitan autenticación aparecen con un candado</p> 
-
+</details>
 <br>
 
 ### Client
