@@ -20,14 +20,14 @@ if (createButton) {
 };
 
 const deleteButton = document.getElementById('delete-button');
-if(deleteButton) {
-    deleteButton.addEventListener('click', function(){
+if (deleteButton) {
+    deleteButton.addEventListener('click', function () {
         document.getElementById('delete-modal').style.display = 'block';
     });
-    document.getElementsByClassName('close-button')[0].addEventListener('click', function() {
+    document.getElementById('delete-close-button').addEventListener('click', function () {
         document.getElementById('delete-modal').style.display = 'none';
     });
-};
+}
 
 const imageInput = document.getElementById('imageInput');
 if(imageInput) {
