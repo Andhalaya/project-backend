@@ -105,7 +105,7 @@ Crear una tienda de ropa básica que contenga las siguientes funcionalidades:
 
 #### Pruebas:
 * [jest](https://www.npmjs.com/package/jest)
-
+* [cheerio](https://cheerio.js.org/)
     </td>
   </tr>
   <tr>
