@@ -317,19 +317,19 @@ Link de Github Pages
   <summary>Ver videos de la página web</summary>
 
   ### Vista general de la página como cliente 
-  https://github.com/FSEduP/project-backend/assets/148755901/9afa920b-e6a2-4a97-a8b9-fcfc90f3ad3b
+  https://github.com/FSEduP/project-backend/assets/148755901/9e444692-c75e-43cc-99c8-e0277b93a6b8
   <p>Vista de toda la página como cliente, viendo todas las funcionalidades, la barra de navegación, los productos, el footer, el botón para volver arriba, los detalles de los productos y el modo noche</p> 
 
   <br>
 
   ### Vista del registro y login
-  https://github.com/FSEduP/project-backend/assets/148755901/7635518f-8056-4c8b-8e01-1b99a475638b
+  https://github.com/FSEduP/project-backend/assets/148755901/bb91d358-d907-4f01-b00c-8da2b2a41b56
   <p>Vista de como es el registro y login en la página de la tienda</p> 
   
   <br>
 
   ### Vista de dashboard como Admin y sus funcionalidades
-  https://github.com/FSEduP/project-backend/assets/148755901/695fa1ce-f05e-4076-9821-f418a754a73f
+  https://github.com/FSEduP/project-backend/assets/148755901/9fd0335c-dc7f-44cd-9153-2635f432a5df
   <p>Vista de toda la página como Admin, viendo las mismas funcionalidades que el cliente más la edición, creación y borrado de un producto</p> 
 </details>
 
