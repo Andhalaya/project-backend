@@ -293,13 +293,6 @@ https://project-backend-dev-send.1.ie-1.fl0.io/products
 
 <br>
 
-  ### Vista de la ruta /api/dashboard
-  ![Vista de la ruta /api/dashboard](/public/images/apiDocsDashboard.jpg)
-  <p>Vista de la ruta /api/dashboard, que muestra todos los productos de la página tras estar logado en la página</p> 
-</details>
-
-<br>
-
 <details>
   <summary>Ver videos de la página web</summary>
 
@@ -338,6 +331,10 @@ https://project-backend-dev-send.1.ie-1.fl0.io/api-docs
   ### Vista general de la documentación
   ![Vista general de la documentación](/public/images/apiDocs.jpg)
   <p>Vista general de la documentación en swagger con todas las rutas utilizadas, aquellas que necesitan autenticación aparecen con un candado</p> 
+
+  ### Vista de la ruta /api/dashboard
+  ![Vista de la ruta /api/dashboard](/public/images/apiDocsDashboard.jpg)
+  <p>Vista de la ruta /api/dashboard, que muestra todos los productos de la página tras estar logado en la página</p> 
 </details>
 <br>
 
