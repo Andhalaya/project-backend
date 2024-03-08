@@ -112,7 +112,7 @@ Crear una tienda de ropa básica que contenga las siguientes funcionalidades:
   <tr>
     <td colspan="3">
 
-#### Otros:
+#### Autenticación:
 * [firebase](https://firebase.google.com/)
 
     </td>
