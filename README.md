@@ -355,8 +355,6 @@ Para acceder a la documentación con swagger hay que acceder a través de la sig
 | Route Name                  | Request Type | RequestBody                                             | Request Path                        |
 |-----------------------------|--------------|---------------------------------------------------------|-------------------------------------|
 | `showProductByIdAPI`        | PUT          | null                                                    | `/dashboard/:productId `        |
-| `showDashboardAPI`          | GET          | null                                                    | `/dashboard`                    |
 | `createProductAPI`          | POST         | (nombre, descripción, categoría, talla, precio, imagen) | `/dashboard/new`                |
-| `showEditProductAPI`        | GET          | null                                                    | `/dashboard/:productId/edit`    |
 | `editProductAPI`            | POST         | (nombre, descripción, categoría, talla, precio, imagen) | `/dashboard/:productId/edit`    |
 | `deleteProductAPI`          | POST         | null                                                    | `/dashboard/:productId/delete`  |
