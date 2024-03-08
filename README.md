@@ -347,16 +347,16 @@ Para acceder a la documentación con swagger hay que acceder a través de la sig
 ### Client
 | Route Name                  | Request Type | RequestBody                                             | Request Path                        |
 |-----------------------------|--------------|---------------------------------------------------------|-------------------------------------|
-| `showProductsAPI`           | GET          | null                                                    | `/api/products`                     |
-| `showProductByIdAPI`        | GET          | null                                                    | `/api/products/:productId`          |
-| `showProductsByCategoryAPI` | GET          | null                                                    | `/api/category/:category`           |
+| `showProductsAPI`           | GET          | null                                                    | `/products`                     |
+| `showProductByIdAPI`        | GET          | null                                                    | `/products/:productId`          |
+| `showProductsByCategoryAPI` | GET          | null                                                    | `/category/:category`           |
 
 ### Admin
 | Route Name                  | Request Type | RequestBody                                             | Request Path                        |
 |-----------------------------|--------------|---------------------------------------------------------|-------------------------------------|
-| `showProductByIdAPI`        | PUT          | null                                                    | `/api/dashboard/:productId `        |
-| `showDashboardAPI`          | GET          | null                                                    | `/api/dashboard`                    |
-| `createProductAPI`          | POST         | (nombre, descripción, categoría, talla, precio, imagen) | `/api/dashboard/new`                |
-| `showEditProductAPI`        | GET          | null                                                    | `/api/dashboard/:productId/edit`    |
-| `editProductAPI`            | POST         | (nombre, descripción, categoría, talla, precio, imagen) | `/api/dashboard/:productId/edit`    |
-| `deleteProductAPI`          | POST         | null                                                    | `/api/dashboard/:productId/delete`  |
+| `showProductByIdAPI`        | PUT          | null                                                    | `/dashboard/:productId `        |
+| `showDashboardAPI`          | GET          | null                                                    | `/dashboard`                    |
+| `createProductAPI`          | POST         | (nombre, descripción, categoría, talla, precio, imagen) | `/dashboard/new`                |
+| `showEditProductAPI`        | GET          | null                                                    | `/dashboard/:productId/edit`    |
+| `editProductAPI`            | POST         | (nombre, descripción, categoría, talla, precio, imagen) | `/dashboard/:productId/edit`    |
+| `deleteProductAPI`          | POST         | null                                                    | `/dashboard/:productId/delete`  |
