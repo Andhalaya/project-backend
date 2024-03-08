@@ -178,7 +178,7 @@ Crear una tienda de ropa básica que contenga las siguientes funcionalidades:
 * Forkear el proyecto
 * Abrir git y Clonar el repositorio:
 ```
-1- git clone https://github.com/Andhalaya/project-private.git
+1- git clone https://github.com/Andhalaya/project-backend.git
 ```
 * Abrir en Visual Studio Code
 * Instalar las dependencias
@@ -200,9 +200,7 @@ npm init -y
 
 *  O utilizar el siguiente link para visualizar la página web:
 
-
-Link de fl0
-Link de Github Pages
+https://project-backend-dev-send.1.ie-1.fl0.io/products
 
 
 
@@ -213,7 +211,7 @@ Link de Github Pages
 <br>
 
 <details>
-  <summary>Ver imágenes como User</summary>
+  <summary>Ver imágenes como Cliente</summary>
   
   ### Vista productos
   ![Vista productos](/public/images/products.jpg)
@@ -339,24 +337,21 @@ Link de Github Pages
 Para acceder a la documentación con swagger hay que acceder a través de la siguiente ruta:
 
 ```
-/api-docs
-
+https://project-backend-dev-send.1.ie-1.fl0.io/products/api-docs
 ```
 :lock: Para que las rutas del /dashboard funcionen hay que estar logado en la página con un usuario y contraseña válidos
 
 ### Client
 | Route Name                  | Request Type | RequestBody                                             | Request Path                        |
 |-----------------------------|--------------|---------------------------------------------------------|-------------------------------------|
-| `showProductsAPI`           | GET          | null                                                    | `/api/products`                     |
-| `showProductByIdAPI`        | GET          | null                                                    | `/api/products/:productId`          |
-| `showProductsByCategoryAPI` | GET          | null                                                    | `/api/category/:category`           |
+| `showProductsAPI`           | GET          | null                                                    | `/products`                     |
+| `showProductByIdAPI`        | GET          | null                                                    | `/products/:productId`          |
+| `showProductsByCategoryAPI` | GET          | null                                                    | `/category/:category`           |
 
 ### Admin
 | Route Name                  | Request Type | RequestBody                                             | Request Path                        |
 |-----------------------------|--------------|---------------------------------------------------------|-------------------------------------|
-| `showProductByIdAPI`        | PUT          | null                                                    | `/api/dashboard/:productId `        |
-| `showDashboardAPI`          | GET          | null                                                    | `/api/dashboard`                    |
-| `createProductAPI`          | POST         | (nombre, descripción, categoría, talla, precio, imagen) | `/api/dashboard/new`                |
-| `showEditProductAPI`        | GET          | null                                                    | `/api/dashboard/:productId/edit`    |
-| `editProductAPI`            | POST         | (nombre, descripción, categoría, talla, precio, imagen) | `/api/dashboard/:productId/edit`    |
-| `deleteProductAPI`          | POST         | null                                                    | `/api/dashboard/:productId/delete`  |
+| `showProductByIdAPI`        | PUT          | null                                                    | `/dashboard/:productId `        |
+| `createProductAPI`          | POST         | (nombre, descripción, categoría, talla, precio, imagen) | `/dashboard/new`                |
+| `editProductAPI`            | POST         | (nombre, descripción, categoría, talla, precio, imagen) | `/dashboard/:productId/edit`    |
+| `deleteProductAPI`          | POST         | null                                                    | `/dashboard/:productId/delete`  |
