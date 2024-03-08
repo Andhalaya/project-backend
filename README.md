@@ -195,15 +195,13 @@ npm init -y
 
 
 
-
-
-
-
 *  O utilizar el siguiente link para visualizar la página web:
 
+```
 https://project-backend-dev-send.1.ie-1.fl0.io/products
+```
 
-
+<br>
 
 
 ### **_5. Imágenes_** :video_camera:
@@ -250,11 +248,11 @@ https://project-backend-dev-send.1.ie-1.fl0.io/products
 
   <br>
 
-  ### nav
-  ![nav](/public/images/nav.jpg)
-  <p>Menú de navegación</p> 
+  ### Página web responsive
+  <p>Prueba de la página en un dispositivo móvil con la pantalla más pequeña</p> 
 
-  ![nav](/public/images/nav2.jpg)
+  https://github.com/FSEduP/project-backend/assets/148755901/95ff313a-edff-4c40-9d15-c20a251cfe79
+
 </details>
 
 <br>
@@ -297,22 +295,6 @@ https://project-backend-dev-send.1.ie-1.fl0.io/products
 <br>
 
 <details>
-  <summary>Ver imágenes documentación en Swagger</summary>
-
-  ### Vista general de la documentación
-  ![Vista general de la documentación](/public/images/apiDocs.jpg)
-  <p>Vista general de la documentación en swagger con todas las rutas utilizadas, aquellas que necesitan autenticación aparecen con un candado</p> 
-
-  <br>
-
-  ### Vista de la ruta /api/dashboard
-  ![Vista de la ruta /api/dashboard](/public/images/apiDocsDashboard.jpg)
-  <p>Vista de la ruta /api/dashboard, que muestra todos los productos de la página tras estar logado en la página</p> 
-</details>
-
-<br>
-
-<details>
   <summary>Ver videos de la página web</summary>
 
   ### Vista general de la página como cliente 
@@ -338,9 +320,24 @@ https://project-backend-dev-send.1.ie-1.fl0.io/products
 Para acceder a la documentación con swagger hay que acceder a través de la siguiente ruta:
 
 ```
-https://project-backend-dev-send.1.ie-1.fl0.io/products/api-docs
+https://project-backend-dev-send.1.ie-1.fl0.io/api-docs
 ```
 :lock: Para que las rutas del /dashboard funcionen hay que estar logado en la página con un usuario y contraseña válidos
+
+<br>
+
+<details>
+  <summary>Ver imágenes documentación en Swagger</summary>
+
+  ### Vista general de la documentación
+  ![Vista general de la documentación](/public/images/apiDocs.jpg)
+  <p>Vista general de la documentación en swagger con todas las rutas utilizadas, aquellas que necesitan autenticación aparecen con un candado</p> 
+
+  ### Vista de la ruta /api/dashboard
+  ![Vista de la ruta /api/dashboard](/public/images/apiDocsDashboard.jpg)
+  <p>Vista de la ruta /api/dashboard, que muestra todos los productos de la página tras estar logado en la página</p> 
+</details>
+<br>
 
 ### Client
 | Route Name                  | Request Type | RequestBody                                             | Request Path                        |
