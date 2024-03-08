@@ -293,15 +293,6 @@ https://project-backend-dev-send.1.ie-1.fl0.io/products
 
 <br>
 
-<details>
-  <summary>Ver imágenes documentación en Swagger</summary>
-
-  ### Vista general de la documentación
-  ![Vista general de la documentación](/public/images/apiDocs.jpg)
-  <p>Vista general de la documentación en swagger con todas las rutas utilizadas, aquellas que necesitan autenticación aparecen con un candado</p> 
-
-  <br>
-
   ### Vista de la ruta /api/dashboard
   ![Vista de la ruta /api/dashboard](/public/images/apiDocsDashboard.jpg)
   <p>Vista de la ruta /api/dashboard, que muestra todos los productos de la página tras estar logado en la página</p> 
@@ -338,6 +329,17 @@ Para acceder a la documentación con swagger hay que acceder a través de la sig
 https://project-backend-dev-send.1.ie-1.fl0.io/api-docs
 ```
 :lock: Para que las rutas del /dashboard funcionen hay que estar logado en la página con un usuario y contraseña válidos
+
+<br>
+
+<details>
+  <summary>Ver imágenes documentación en Swagger</summary>
+
+  ### Vista general de la documentación
+  ![Vista general de la documentación](/public/images/apiDocs.jpg)
+  <p>Vista general de la documentación en swagger con todas las rutas utilizadas, aquellas que necesitan autenticación aparecen con un candado</p> 
+
+<br>
 
 ### Client
 | Route Name                  | Request Type | RequestBody                                             | Request Path                        |
