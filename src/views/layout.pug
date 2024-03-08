@@ -88,13 +88,13 @@ html
                   a.register#register-button(href="/register") Registrarse
         .dark-mode-toggle(onclick="toggleDarkMode()")
           div#sky.sky
-            img.icon.sun-icon(src="../images/sol.png", id="sun-icon")
-            img.icon.moon-icon.hidden(src="../images/luna.png", id="moon-icon")
+            img.icon.sun-icon(src="/images/sol.png", id="sun-icon")
+            img.icon.moon-icon.hidden(src="/images/luna.png", id="moon-icon")
       main.content
           block content
       div.go-up-arrow-div
         img.go-up-arrow(
-          src="../images/flecha.png" 
+          src="/images/flecha.png" 
           onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
         )
 

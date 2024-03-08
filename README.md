@@ -194,15 +194,13 @@ npm init -y
 
 
 
-
-
-
-
 *  O utilizar el siguiente link para visualizar la página web:
 
+```
 https://project-backend-dev-send.1.ie-1.fl0.io/products
+```
 
-
+<br>
 
 
 ### **_5. Imágenes_** :video_camera:
@@ -249,11 +247,10 @@ https://project-backend-dev-send.1.ie-1.fl0.io/products
 
   <br>
 
-  ### nav
-  ![nav](/public/images/nav.jpg)
-  <p>Menú de navegación</p> 
+  ### Página eb responsive
+  <p>Prueba de la pagina en un dispositivo con la pantalla mas pequeña</p> 
 
-  ![nav](/public/images/nav2.jpg)
+
 </details>
 
 <br>
