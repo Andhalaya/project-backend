@@ -41,13 +41,9 @@ async function registerUser(req, res) {
   }
   try {
     await createUserWithEmailAndPassword(auth, email, password);
-    res.send(`
-        <h1>Registro exitoso</h1>
-        <p>Usuario registrado correctamente.</p>
-        <p><a href="/products">Volver a Inicio</a></p>
-      `);
+    res.render('register', { message: "Usuario registrado correctamente" });
   } catch (error) {
-    res.status(500).render('register', { errorMessage: "Error durante el registro. Datos de usuario no válidos" });
+    res.status(500).render('register', { errorMessage: "Error durante el registro. Formato de datos no válido" });
   }
 };
 

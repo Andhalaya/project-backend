@@ -11,11 +11,9 @@ block content
         label(for="password") Contraseña:
         input(type="password", id="password", name="password", required, autocomplete="current-password")
       button#button-register.button-register(type="submit") Registrarse
-      a#register-back.rebister-back(href="/products") Volver a Inicio
-  if successMessage     
-    p= successMessage
-    p
-      a(href="/products") Volver a Inicio
+      a#register-back.register-back(href="/products") Volver a Inicio
+  if message     
+    p.message= message
   else if errorMessage
     script.
       alert("#{errorMessage}")

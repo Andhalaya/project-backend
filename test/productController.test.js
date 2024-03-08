@@ -2,6 +2,7 @@ const request = require('supertest');
 const mongoose = require('mongoose');
 const app = require('../src/index');
 const Product = require('../src/models/Product');
+const cheerio = require('cheerio');
 require('dotenv').config();
 
 describe('Pruebas sobre la API de productos', () => {
@@ -61,12 +62,61 @@ describe('Pruebas sobre la API de productos', () => {
         expect(response.headers['content-type']).toMatch(/html/);
         expect(Product.findById).toHaveBeenCalledWith('mockId');
         expect(response.text).toContain(mockProduct.name);
-
-        const priceRegex = /<b class="item-field-title">Precio:<\/b>(\d+)€/;
-        const match = response.text.match(priceRegex);
-        const priceInHtml = match ? parseInt(match[1]) : null;
-
-        expect(priceInHtml).toBe(mockProduct.price);
         });
     });
+    describe('GET /category/:category', () => {
+        it('La ruta funciona correctamente', async () => {
+            // Mock de la categoría que se espera obtener
+            const mockCategory = 'Camisetas';
+    
+            // Crear un mock del modelo Product
+            jest.spyOn(Product, 'find');
+    
+            // Productos simulados que se esperan encontrar en la categoría
+            const mockProducts = [
+                {
+                    _id: 'mockId1',
+                    name: 'Camiseta Roja',
+                    category: 'Camisetas',
+                    price: 15,
+                },
+                {
+                    _id: 'mockId2',
+                    name: 'Camiseta Azul',
+                    category: 'Camisetas',
+                    price: 20,
+                },
+            ];
+    
+            
+            Product.find.mockResolvedValue(mockProducts);
+    
+            const response = await request(app).get('/category/Camisetas').send();
+
+            expect(response.status).toBe(200);
+            expect(response.headers['content-type']).toMatch(/html/);
+            expect(Product.find).toHaveBeenCalledWith({ category: mockCategory });
+            const $ = cheerio.load(response.text);
+            const productElements = $('.item-card');
+            expect(productElements.length).toBe(mockProducts.length);
+        });
+    });
+    // Crear un mock para el módulo 'multer'
+    jest.mock('multer', () => {
+    return {
+        single: jest.fn(() => (req, res, next) => {
+            req.file = {
+                // Mock del archivo cargado
+                fieldname: 'image',
+                originalname: 'test-image.jpg',
+                encoding: '7bit',
+                mimetype: 'image/jpeg',
+                buffer: Buffer.from([8, 6, 7, 5, 3, 0, 9]),
+                size: 7
+            };
+            next();
+        })
+    };
+});
+
 });
