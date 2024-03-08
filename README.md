@@ -200,9 +200,7 @@ npm init -y
 
 *  O utilizar el siguiente link para visualizar la página web:
 
-
-Link de fl0
-Link de Github Pages
+https://project-backend-dev-send.1.ie-1.fl0.io/products
 
 
 
@@ -339,8 +337,7 @@ Link de Github Pages
 Para acceder a la documentación con swagger hay que acceder a través de la siguiente ruta:
 
 ```
-/api-docs
-
+https://project-backend-dev-send.1.ie-1.fl0.io/products/api-docs
 ```
 :lock: Para que las rutas del /dashboard funcionen hay que estar logado en la página con un usuario y contraseña válidos
 
