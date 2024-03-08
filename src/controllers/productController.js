@@ -70,7 +70,7 @@ const createProduct = async (req, res) => {
       res.redirect('/dashboard'+'/'+ product._id);
   } catch (error) {
     console.error('Error al crear el producto:', error);
-    res.status(500).send('Error del servidor');
+    res.status(500).send(error);
   }
 };
 
