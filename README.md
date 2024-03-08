@@ -209,7 +209,7 @@ https://project-backend-dev-send.1.ie-1.fl0.io/products
 <br>
 
 <details>
-  <summary>Ver imágenes como User</summary>
+  <summary>Ver imágenes como Cliente</summary>
   
   ### Vista productos
   ![Vista productos](/public/images/products.jpg)
@@ -341,16 +341,14 @@ https://project-backend-dev-send.1.ie-1.fl0.io/products/api-docs
 ### Client
 | Route Name                  | Request Type | RequestBody                                             | Request Path                        |
 |-----------------------------|--------------|---------------------------------------------------------|-------------------------------------|
-| `showProductsAPI`           | GET          | null                                                    | `/api/products`                     |
-| `showProductByIdAPI`        | GET          | null                                                    | `/api/products/:productId`          |
-| `showProductsByCategoryAPI` | GET          | null                                                    | `/api/category/:category`           |
+| `showProductsAPI`           | GET          | null                                                    | `/products`                     |
+| `showProductByIdAPI`        | GET          | null                                                    | `/products/:productId`          |
+| `showProductsByCategoryAPI` | GET          | null                                                    | `/category/:category`           |
 
 ### Admin
 | Route Name                  | Request Type | RequestBody                                             | Request Path                        |
 |-----------------------------|--------------|---------------------------------------------------------|-------------------------------------|
-| `showProductByIdAPI`        | PUT          | null                                                    | `/api/dashboard/:productId `        |
-| `showDashboardAPI`          | GET          | null                                                    | `/api/dashboard`                    |
-| `createProductAPI`          | POST         | (nombre, descripción, categoría, talla, precio, imagen) | `/api/dashboard/new`                |
-| `showEditProductAPI`        | GET          | null                                                    | `/api/dashboard/:productId/edit`    |
-| `editProductAPI`            | POST         | (nombre, descripción, categoría, talla, precio, imagen) | `/api/dashboard/:productId/edit`    |
-| `deleteProductAPI`          | POST         | null                                                    | `/api/dashboard/:productId/delete`  |
+| `showProductByIdAPI`        | PUT          | null                                                    | `/dashboard/:productId `        |
+| `createProductAPI`          | POST         | (nombre, descripción, categoría, talla, precio, imagen) | `/dashboard/new`                |
+| `editProductAPI`            | POST         | (nombre, descripción, categoría, talla, precio, imagen) | `/dashboard/:productId/edit`    |
+| `deleteProductAPI`          | POST         | null                                                    | `/dashboard/:productId/delete`  |

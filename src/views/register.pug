@@ -12,3 +12,11 @@ block content
         input(type="password", id="password", name="password", required, autocomplete="current-password")
       button#button-register.button-register(type="submit") Registrarse
       a#register-back.rebister-back(href="/products") Volver a Inicio
+  if successMessage     
+    p= successMessage
+    p
+      a(href="/products") Volver a Inicio
+  else if errorMessage
+    script.
+      alert("#{errorMessage}")
+
