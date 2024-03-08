@@ -135,11 +135,11 @@ header .nav {
     line-height: 20px;
     background-color: #fefefe;
     background: linear-gradient(45deg, #70B3BF, #70B3BF, aliceblue);
-    margin: 15% auto;
+    margin: 50px auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 400px;
-    height: 400px;
+    max-width: 476px;
+    max-height: 950px;
     color: #737373;
     gap: 15px;
 }
@@ -329,12 +329,6 @@ p {
 .sizes-content {
     width: 422px;
     height: 1050px;
-    margin-top: 50px;
-}
-
-#create-content {
-    width: 422px;
-    height: 80%;
     margin-top: 50px;
 }
 
