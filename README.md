@@ -211,7 +211,7 @@ https://project-backend-dev-send.1.ie-1.fl0.io/products
 <br>
 
 <details>
-  <summary>Ver imágenes como User</summary>
+  <summary>Ver imágenes como Cliente</summary>
   
   ### Vista productos
   ![Vista productos](/public/images/products.jpg)
