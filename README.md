@@ -178,7 +178,7 @@ Crear una tienda de ropa básica que contenga las siguientes funcionalidades:
 * Forkear el proyecto
 * Abrir git y Clonar el repositorio:
 ```
-1- git clone https://github.com/Andhalaya/project-private.git
+1- git clone https://github.com/Andhalaya/project-backend.git
 ```
 * Abrir en Visual Studio Code
 * Instalar las dependencias
