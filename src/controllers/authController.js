@@ -47,11 +47,7 @@ async function registerUser(req, res) {
         <p><a href="/products">Volver a Inicio</a></p>
       `);
   } catch (error) {
-    window.alert(`
-      <h1>Error al registrar usuario</h1>
-      <p>${error.message}</p>
-      <p><a href="/register">Volver a Intentar</a></p>
-    `);
+    res.status(500).render('register', { errorMessage: "Error durante el registro. Datos de usuario no válidos" });
   }
 };
 

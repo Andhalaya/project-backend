@@ -10,19 +10,19 @@ router.get('/category/:category', productController.showProductsByCategory);
 router.get('/dashboard/:productId', isAuthenticated, productController.showProductById);
 router.get('/dashboard', isAuthenticated, productController.showDashboard);
 router.post('/dashboard/new', isAuthenticated, upload.single('image'), productController.createProduct);
-router.get('/dashboard/:productId/edit', productController.showEditProduct);
+router.get('/dashboard/:productId/edit', isAuthenticated, productController.showEditProduct);
 router.post('/dashboard/:productId/edit', isAuthenticated, upload.single('image'), productController.editProduct);
 router.post('/dashboard/:productId/delete',isAuthenticated, productController.deleteProduct);
 
-router.get('/api/products', productController.showProductsAPI);
-router.get('/api/products/:productId', productController.showProductByIdAPI);
-router.get('/api/category/:category', productController.showProductsByCategoryAPI);
-router.get('/api/dashboard/:productId', isAuthenticated, productController.showProductByIdAPI);
-router.get('/api/dashboard', isAuthenticated, productController.showDashboardAPI);
-router.post('/api/dashboard/new', isAuthenticated, upload.single('image'), productController.createProductAPI);
-router.get('/api/dashboard/:productId/edit', isAuthenticated, productController.showEditProductAPI);
-router.post('/api/dashboard/:productId/edit', isAuthenticated, upload.single('image'), productController.editProductAPI);
-router.post('/api/dashboard/:productId/delete', productController.deleteProductAPI);
+router.get('/products', productController.showProductsAPI);
+router.get('/products/:productId', productController.showProductByIdAPI);
+router.get('/category/:category', productController.showProductsByCategoryAPI);
+router.get('/dashboard/:productId', isAuthenticated, productController.showProductByIdAPI);
+router.get('/dashboard', isAuthenticated, productController.showDashboardAPI);
+router.post('/dashboard/new', isAuthenticated, upload.single('image'), productController.createProductAPI);
+router.get('/dashboard/:productId/edit', isAuthenticated, productController.showEditProductAPI);
+router.post('/dashboard/:productId/edit', isAuthenticated, upload.single('image'), productController.editProductAPI);
+router.post('/dashboard/:productId/delete', productController.deleteProductAPI);
 
 module.exports = router;
 
