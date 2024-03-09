@@ -192,7 +192,7 @@ block content
               //-   | delete
         #delete-modal.modal(style="display: none;")
               .modal-content#delete-button-form
-                .close-button &times;
+                #delete-close-button.close-button &times;
                 h2 Eliminar Producto
                 p ¿Estás seguro que quieres borrar este producto de la página?
                 form(action=`/dashboard/${product._id}/delete` method='post')

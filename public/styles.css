@@ -58,14 +58,10 @@ header .nav {
     font-size: 1.2rem;
 }
 
-.links {
-    color: #737373;
-    position: relative;
-}
 
-.links::before {
+.effect::before {
     content:"";
-    border-bottom: 2px solid #FFE900;
+    border-bottom: 2px solid #FFE900 !important;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -75,9 +71,9 @@ header .nav {
     opacity: 0;
 }
 
-.links::after {
+.effect::after {
     content:"";
-    border-bottom: 2px solid #FFE900;
+    border-bottom: 2px solid #FFE900 ;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -87,21 +83,19 @@ header .nav {
     opacity: 0;
 }
 
-.links a:hover {
-    color: #FFE900;
-}
-
-.links:hover::before {
+.effect:hover::before {
    opacity: 1;
     width: 70px;
 }
 
-.links:hover:after {
+.effect:hover:after {
     opacity: 1;
     width: 50px;
 }
 
-
+.links a {
+    position: relative;
+}
 
 #login-form {
     width: 380px;
