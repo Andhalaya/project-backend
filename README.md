@@ -310,7 +310,7 @@ npm init -y
   <br>
 
   ### Vista de dashboard como Admin y sus funcionalidades
-  https://github.com/FSEduP/project-backend/assets/148755901/9fd0335c-dc7f-44cd-9153-2635f432a5df
+  https://github.com/FSEduP/project-backend/assets/148755901/340dfe2e-f063-47d3-89e1-73c0cbcb44e7
   <p>Vista de toda la página como Admin, viendo las mismas funcionalidades que el cliente más la edición, creación y borrado de un producto</p> 
 </details>
 
