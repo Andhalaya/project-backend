@@ -325,7 +325,7 @@ p {
     padding: 20px;
     font-size: 20px;
 }
-/*Modificar el espacio para que cuadre las tallas*/
+
 .sizes-content {
     width: 422px;
     height: 1050px;
@@ -383,7 +383,7 @@ p {
     font-size: 20px;
     margin: 10px;
 }
-/*Modificar el espacio para que cuadre el eliminar*/
+
 #delete-button-form {
     height: 16%;
     width: 29%;
@@ -545,6 +545,17 @@ summary {
     justify-content: center;
 }
 
+.message {
+    display: flex;
+    justify-content: center;
+    padding: 5px 15px;
+    border: 2px double #FFE900;
+    border-radius: 5px;
+    background-color: transparent;
+    margin: 10px;
+    width: 150px;
+}
+
 /*-------------------------------- FOOTER-------------------------------------- */
 
 .footer {
@@ -608,7 +619,7 @@ summary {
     height: 50px;
     cursor: pointer;
 }
-/*transición del fondo del botón*/
+
 .sky {
     background-color: rgb(231, 231, 47);
     margin-left: 10px;
@@ -661,7 +672,7 @@ summary {
     background-color: #8094c4;
     border-color: #737373;
 }
-/*.darkHeader ul  para el nav responsivo*/
+
 .darkFooter, .darkHeader {
     color: aliceblue;
     background: linear-gradient(45deg, #0a3256, #051425, #333333);
