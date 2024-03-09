@@ -305,7 +305,7 @@ https://project-backend-dev-send.1.ie-1.fl0.io/products
   <br>
 
   ### Vista del registro y login
-  https://github.com/FSEduP/project-backend/assets/148755901/bb91d358-d907-4f01-b00c-8da2b2a41b56
+  https://github.com/FSEduP/project-backend/assets/148755901/2453db4f-60a7-49a1-9ebd-56843b920b2e
   <p>Vista de como es el registro y login en la página de la tienda</p> 
   
   <br>
