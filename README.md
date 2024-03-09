@@ -199,7 +199,7 @@ npm init -y
 *  O utilizar el siguiente link para visualizar la página web:
 
 ```
-https://project-backend-dev-send.1.ie-1.fl0.io/products
+[https://project-backend-production-d999.up.railway.app/products](https://project-backend-production-d999.up.railway.app/products)
 ```
 
 <br>
@@ -321,7 +321,7 @@ https://project-backend-dev-send.1.ie-1.fl0.io/products
 Para acceder a la documentación con swagger hay que acceder a través de la siguiente ruta:
 
 ```
-https://project-backend-dev-send.1.ie-1.fl0.io/api-docs
+[https://project-backend-production-d999.up.railway.app/api-docs/](https://project-backend-production-d999.up.railway.app/api-docs/)
 ```
 :lock: Para que las rutas del /dashboard funcionen hay que estar logado en la página con un usuario y contraseña válidos
 
