@@ -149,7 +149,9 @@ header .nav {
     overflow: auto;
 }
 
-
+#previewImage {
+    height: 300px;
+}
 
 #login-form{
     display: flex;
