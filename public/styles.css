@@ -547,7 +547,8 @@ summary {
     border-radius: 5px;
     background-color: transparent;
     margin: 10px;
-    width: 150px;
+    margin-left: 40%;
+    margin-right: 40%;
 }
 
 /*-------------------------------- FOOTER-------------------------------------- */
