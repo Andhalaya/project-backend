@@ -428,10 +428,6 @@ p {
     cursor: pointer;
 }
 
-#delete-button-submit {
-    margin-left: 70%;
-}
-
 .form-input {
     padding: 10px;
     margin-bottom: 15px;
