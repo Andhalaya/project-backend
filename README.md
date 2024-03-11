@@ -152,6 +152,7 @@ Crear una tienda de ropa básica que contenga las siguientes funcionalidades:
 #### Herramientas de deploy:
 * [Fl0](https://www.fl0.com/)
 * [GitHub Pages](https://pages.github.com/)
+* [Railway](https://railway.app/)
 
     </td>
   </tr>
@@ -197,9 +198,8 @@ npm init -y
 
 *  O utilizar el siguiente link para visualizar la página web:
 
-```
-https://project-backend-dev-send.1.ie-1.fl0.io/products
-```
+[https://project-backend-production-d999.up.railway.app/products](https://project-backend-production-d999.up.railway.app/products)
+
 
 <br>
 
@@ -304,7 +304,7 @@ https://project-backend-dev-send.1.ie-1.fl0.io/products
   <br>
 
   ### Vista del registro y login
-  https://github.com/FSEduP/project-backend/assets/148755901/bb91d358-d907-4f01-b00c-8da2b2a41b56
+  https://github.com/FSEduP/project-backend/assets/148755901/2453db4f-60a7-49a1-9ebd-56843b920b2e
   <p>Vista de como es el registro y login en la página de la tienda</p> 
   
   <br>
@@ -320,7 +320,7 @@ https://project-backend-dev-send.1.ie-1.fl0.io/products
 Para acceder a la documentación con swagger hay que acceder a través de la siguiente ruta:
 
 ```
-https://project-backend-dev-send.1.ie-1.fl0.io/api-docs
+https://project-backend-production-d999.up.railway.app/api-docs
 ```
 :lock: Para que las rutas del /dashboard funcionen hay que estar logado en la página con un usuario y contraseña válidos
 
