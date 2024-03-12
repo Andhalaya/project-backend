@@ -137,8 +137,6 @@ const deleteProduct = async (req, res) => {
   }
 };
 
-
-
 /*Controladores de la API*/ 
 const showProductsAPI = async (req, res) => {
   try{
@@ -156,7 +154,6 @@ const showProductsAPI = async (req, res) => {
     res.status(500).send('Error del servidor');
   }
 };
-
 
 const showProductByIdAPI = async (req, res) => {
   try {

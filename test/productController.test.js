@@ -106,7 +106,7 @@ describe('Pruebas sobre la API de productos', () => {
     jest.mock('multer', () => {
         return {
             single: jest.fn(() => (req, res, next) => {
-                // Simular que el archivo se ha cargado correctamente
+                
                 req.file = {
                     fieldname: 'image',
                     originalname: 'test-image.jpg',
@@ -123,16 +123,16 @@ describe('Pruebas sobre la API de productos', () => {
     jest.mock('../src/middlewares/authMiddleware', () => ({
         isAuthenticated: jest.fn().mockImplementation((req, res, next) => {
           if (req.session && req.session.uid) {
-            next(); // Simula que el usuario está autenticado
+            next();
           } else {
-            res.redirect('/products'); // Redirige al usuario a /products
+            res.redirect('/products'); 
           }
         }),
       }));
       
       describe('POST /dashboard/new', () => {
         it('deberia crear un nuevo producto si el usuario está autenticado y proporciona los datos correctos', async () => {
-          // Simulamos un usuario autenticado
+          
             { session: { uid: 'usuarioAutenticado' } };
       
           const response = await request(app)
